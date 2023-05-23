@@ -1,0 +1,67 @@
+#!/bin/bash
+# all environment variables are global variables
+
+export PATH=$PATH:/action
+
+
+#'
+ expansion in shell means replacing certain characters or constructs in a command line with ther value
+
+ we use the dollar sign 
+  $home replaces the value of HOME
+   IT IS case sensitives as well
+
+  the value of the varaible 
+  varaibles store data
+
+  There aRE  FIVE TIMES OF EXPANSIONS
+
+PARAMETER EXPANSION
+ it allows you to retieve the value of a variables or parameter and use in a command 
+   for exAMPLE 
+
+$HOME
+$USER
+
+ COMMAND SUBSTITUUTION
+
+THE DOLLAR SIGN IS A COMMAND ON IT OWN BUT A VARAIBLE CAN ALSO BE A COMMAND 
+   $(COMAND)
+
+0R 
+
+   `COMMAND`
+
+   $(LS | WC -L)
+
+  THE $ IS A COMMAND 
+   Ls is a command for listing 
+ and this | is used to push the output into another command 
+
+  examples 
+  echo "There are $(ls | wc -l) flies in the curent directory"
+
+   or
+
+  echo "There are `ls | wc -l` files in the current directory"
+
+
+
+The Arithematics expansion
+
+ the sum of $a and $b is $((a+b))
+
+Filename expansion
+
+ rmm *.txt
+
+
+the wild cat is *
+
+Brace expansion 
+
+mkdir {pattern}
+
+'
+
+ 

@@ -1,0 +1,6 @@
+#!/bin/bash
+
+echo $((`echo $PATH | grep -o ":/" | wc -l` + 1))
+
+# this type of expansion in shell has 
+# parameter, command, 
